@@ -69,7 +69,7 @@ img {
     color: var(--white);
 }
 
-.btn-primary:hover {
+background: #5a9e32;
     background: #e55a2b;
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
@@ -104,7 +104,7 @@ img {
     display: inline-block;
     padding: 8px 16px;
     background: linear-gradient(135deg, rgba(0, 168, 204, 0.1), rgba(0, 86, 179, 0.1));
-    color: var(--primary);
+ background: linear-gradient(135deg, rgba(45, 90, 61, 0.1), rgba(74, 124, 92, 0.1));
     font-weight: 600;
     font-size: 0.875rem;
     border-radius: 50px;
@@ -189,11 +189,11 @@ img {
     border-radius: 50px;
     font-weight: 600;
 }
-
+background: #5a9e32;
 .btn-nav:hover {
     background: #e55a2b;
 }
-
+background: linear-gradient(90deg, rgba(30, 61, 41, 0.95) 0%, rgba(45, 90, 61, 0.85) 100%);
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
@@ -255,7 +255,7 @@ img {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 50px;
     color: var(--white);
-    font-weight: 500;
+  background: linear-gradient(135deg, rgba(45, 90, 61, 0.1), rgba(74, 124, 92, 0.1));
     margin-bottom: 24px;
 }
 
@@ -296,8 +296,7 @@ img {
 .feature {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: var(--white);
+background: linear-gradient(135deg, var(--dark) 0%, #3d3d3d 100%);    color: var(--white);
 }
 
 .feature i {
@@ -346,7 +345,7 @@ img {
 }
 
 .service-badge {
-    position: absolute;
+background: linear-gradient(135deg, rgba(45, 90, 61, 0.1), rgba(74, 124, 92, 0.1));
     top: 20px;
     right: -30px;
     background: var(--accent);
@@ -559,8 +558,7 @@ img {
     margin-bottom: 20px;
 }
 
-.google-badge {
-    display: inline-flex;
+background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);    display: inline-flex;
     align-items: center;
     gap: 6px;
     background: #f1f3f4;
