@@ -6,7 +6,7 @@
     <title>Depann'Pro - Plombier Professionnel | Interventions 24h/24</title>
     <meta name="description" content="Depann'Pro - Votre plombier de confiance. Dépannage, installation et rénovation. Intervention rapide 24h/24, 7j/7. Devis gratuit.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <link rel="stylesheet" href="styles.css">
@@ -43,7 +43,16 @@
                     <i class="fa-solid fa-shield-check"></i>
                     <span>Intervention rapide garantie</span>
                 </div>
-                <h1>Votre Plombier de Confiance<br><span class="highlight">24h/24 & 7j/7</span></h1>
+                <div class="focus-title">
+                    <span class="focus-word">Votre Plombier de Confiance</span>
+                    <div class="focus-frame">
+                        <span class="corner top-left"></span>
+                        <span class="corner top-right"></span>
+                        <span class="corner bottom-left"></span>
+                        <span class="corner bottom-right"></span>
+                    </div>
+                </div>
+                <h1 class="hero-subtitle">24h/24 & 7j/7</h1>
                 <p>Dépannage, installation et rénovation plumbing. Intervention sous 30 minutes pour vos urgences. Devis gratuit et transparent.</p>
                 <div class="hero-cta">
                     <a href="tel:0612345678" class="btn btn-primary">
@@ -130,7 +139,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fa-solid fa-screwdriver-wrench" style="color: #0056b3;"></i>
+                        <i class="fa-solid fa-screwdriver-wrench" style="color: var(--primary);"></i>
                     </div>
                     <h3>Débouchage Canalisation</h3>
                     <p>WC, évier, douche ou canalisation principale. Débouchage professionnel par méthode adaptée.</p>
@@ -219,7 +228,8 @@
                                 <p>Prix transparent sans surprise</p>
                             </div>
                         </div>
-                           <i class="fa-solid fa-circle-check"></i>
+                        <div class="about-feature">
+                            <i class="fa-solid fa-circle-check"></i>
                             <div>
                                 <h4>Assistance 24h/24</h4>
                                 <p>Un plombier disponible même la nuit</p>
@@ -517,8 +527,8 @@
             ];
 
             L.polygon(vaucluseCoords, {
-                color: '#ff6b35',
-                fillColor: '#ff6b35',
+                color: '#7cb342',
+                fillColor: '#7cb342',
                 fillOpacity: 0.15,
                 weight: 0
             }).addTo(map);
