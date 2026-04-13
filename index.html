@@ -63,46 +63,54 @@
                 </div>
                 <div class="hero-features">
                     <div class="feature">
-                        <i class="fa-solid fa-clock"></i>
-                        <span>30 min d'intervention</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fa-solid fa-euro-sign"></i>
-                        <span>Devis gratuit</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fa-solid fa-award"></i>
-                        <span>10 ans d'expérience</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+/* Animation Titre */
+.focus-title {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nos Services</span>
-                <h2>Des Solutions pour Tous Vos Problèmes de Plomberie</h2>
-                <p>Une équipe qualifiée à votre service pour toute intervention</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-wrench"></i>
-                    </div>
-                    <h3>Dépannage d'Urgence</h3>
-                    <p>Fuite d'eau, canalisation bouchée, WC bloqué ? Nous intervenons rapidement pour résoudre votre problème.</p>
-                    <ul class="service-list">
-                        <li><i class="fa-solid fa-check"></i> Intervention sous 30 min</li>
-                        <li><i class="fa-solid fa-check"></i> Disponible 24h/24</li>
-                        <li><i class="fa-solid fa-check"></i> Prix annoncé à l'avance</li>
-                    </ul>
-                </div>
-                <div class="service-card featured">
-                    <div class="service-badge">Le plus demandé</div>
-                    <div class="service-icon">
+.focus-word {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--white);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.focus-frame {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    pointer-events: none;
+}
+
+.focus-frame .corner {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid var(--accent);
+    filter: drop-shadow(0px 0px 8px var(--accent));
+    border-radius: 4px;
+}
+
+.focus-frame .top-left { top: 0; left: 0; border-right: none; border-bottom: none; }
+.focus-frame .top-right { top: 0; right: 0; border-left: none; border-bottom: none; }
+.focus-frame .bottom-left { bottom: 0; left: 0; border-right: none; border-top: none; }
+.focus-frame .bottom-right { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+.focus-title .hero-subtitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white);
+}<div class="service-icon">
                         <i class="fa-solid fa-faucet"></i>
                     </div>
                     <h3>Réparation de Fuites</h3>
